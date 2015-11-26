@@ -1,8 +1,8 @@
 $('#opendiv').on('click', function() {
   console.log(this)
-    $(this).toggleClass("active")
+    var that = this
     $('#div1').slideToggle(200, function() {
-      console.log(this)
-      //$(this).toggleClass("Active")
+      console.log(that)
+      $(that).toggleClass("active")
     });
 })
